@@ -1,6 +1,6 @@
 body{
-    background-color: #D00F2E;
-    color: #F8E80B ;
+    background-color: #5c4ca4;
+    color: #332c61;
     font-family: 'Bebas Neue', cursive;
     font-size: larger;
 }
@@ -20,6 +20,9 @@ body{
     transition: .5s ease;
     backface-visibility: hidden;
 }
+#titouan{
+    font-size: x-large;
+}
 /* try hover img */
 img{
     width: 100px;
@@ -33,11 +36,15 @@ img:hover{
 
     text-align: center;
 }
+button{
+    background-color: #930395!important;
+    color: #332c61 !important;
+}
 
 .resultat{
     display: flex;
     justify-content: center;
-    border: #F8E80B 1px solid;
+    border: #f735fa 1px solid;
 }
 
 .test{
@@ -47,6 +54,7 @@ img:hover{
 .logo{
     width: 300px;
     flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .resultat{
@@ -77,7 +85,7 @@ img:hover{
 
 /* Changement des couleurs des boutons au survols */
 button:hover{
-    background-color: #ffc107 !important; 
+    background-color: #f735fa !important; 
 }
 
 /* voir pour les bts icons */
@@ -88,3 +96,5 @@ button:hover{
 #btsIcon{
     justify-content: space-around;
 }
+
+/* tentative de son */
