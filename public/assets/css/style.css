@@ -42,7 +42,7 @@ img:hover{
 }
 button{
     background-color: #8354ac!important;
-    color: #3cc2e3 !important;
+    color: #3b244b !important;
     border-color:#3b244b !important ;
 }
 
@@ -96,7 +96,7 @@ button{
 
 /* Changement des couleurs des boutons au survols */
 button:hover{
-    background-color: #f735fa !important; 
+    background-color: #FFD1F6 !important; 
 }
 
 /* voir pour les bts icons */

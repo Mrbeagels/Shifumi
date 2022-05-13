@@ -26,11 +26,11 @@ buttons[i].addEventListener("click", function() {
         resultat = "Vous avez fait une egalité !";
     } 
     else if((joueur === "Pierre" && robot === "Ciseaux") || (joueur === "Feuille" && robot === "Pierre") || (joueur === "Ciseaux" && robot === "Feuille")){
-        resultat = " Bazinga ! Vous avez gagné !!";
+        resultat = " 素晴らしい ! Tu as gagné !!";
         userWin++;
     } 
     else {
-        resultat = "Bamboozled ! Vous avez perdu !";
+        resultat = "BA-BAKA ! Vous avez perdu !";
         botWin++;
     }
 
@@ -43,14 +43,16 @@ buttons[i].addEventListener("click", function() {
     userScoreDisplay.innerHTML=userWin;
     botScoreDisplay.innerHTML=botWin;
 
+    if(userWin === 10){
+        alert(`O/ UwU O/ Bravo ${username} tu remportes la victoire et tu rentre chez toi avec une encyclopedie en 78 volumes des maladies de l'oreille interne! `);
+    } 
+    else if (botWin === 10){
+        alert((`B-BA-BAKKA, j'ai voulu te laisser gagner, mais t'es trop un bakka !`));
+    }
+
+    if(userWin === 10 || botWin === 10){
+        location.reload();
+    }
 
 })
 }
-
-
-// if(userWin === 10){
-//     alert(`O/ UwU O/ Bravo ${joueur} tu remportes la victoire et tu rentre chez toi avec une encyclopedie en 78 volumes des maladies de l'oreille interne! `);
-// } 
-// else(botWin === 10){
-//     alert((`B-BA-BAKKA, j'ai voulu te laisser gagner, mais t'es trop un bakka !`));
-// }
