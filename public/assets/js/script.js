@@ -15,8 +15,8 @@ document.onclick = function() {
 // Ici je recupere le choix du joueurs humain au click sur un bouton et je donne une valeur random au bot avec Math.floor et math.random
 
 for (let i = 0; i < buttons.length; i++){
-buttons[i].addEventListener("click", function() {
-    sound.play();
+    // sound.play();
+    buttons[i].addEventListener("click", function() {
     var joueur = buttons[i].innerHTML;
     var robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
     var resultat;
@@ -52,6 +52,7 @@ buttons[i].addEventListener("click", function() {
 
     if(userWin === 10 || botWin === 10){
         location.reload();
+        sound.play();
     }
 
 })

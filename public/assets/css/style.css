@@ -1,49 +1,94 @@
+
+html {
+    height: 100%;
+}
+
 body{
     /* background-color: #3cc2e3; */
-    background-image: url(https://www.finetoshine.com/wp-content/uploads/2020/09/Top-10-Trending-Live-Wallpaper-iPhone-iOs-On-Pinterest.gif);
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2534b236-6ad0-4205-a4fe-52befe5e83f1/dd3h7lq-2d21053d-c224-4700-824c-dd08526cc0c6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1MzRiMjM2LTZhZDAtNDIwNS1hNGZlLTUyYmVmZTVlODNmMVwvZGQzaDdscS0yZDIxMDUzZC1jMjI0LTQ3MDAtODI0Yy1kZDA4NTI2Y2MwYzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J4vVa0idf8ZtHDMwcAr3UCJApDAmtkqdr2K1hoRZakU);
     background-repeat: no-repeat;
     background-size: cover;
     color:#3b244b ;
     font-family: 'Bebas Neue', cursive;
-    font-size: larger;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+footer{
+    position: absolute; bottom: 0;
+    flex-wrap: wrap;
+    /* display: flex; */
+    text-align: center;
+    width: 100%;
+}
+#thibaud{
+    width:100%;
+
+}
+.logoSocial{
+    height: 20px;
+    width: 40px;
+    justify-content: center;
+}
+.logoSocialLinkedin{
+    height: 20px;
+    width:20px;
+    
+}
+.uwuLogoGirl{
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+.uwucolor{
+    color: #f735fa !important;
 }
 
 .title{
 
     text-align: center;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
+    align-items: flex-end;
     width: 100%;
 }
 
-.icon{
+.buttonStone{
     display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    justify-content: center;
+    margin-bottom: 50px;
 }
-#titouan{
-    font-size: x-large;
+.buttonLeaf{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
-/* try hover img */
-img{
+.buttonScissor{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.swingimage{
+    height: 100px;
     width: 100px;
-    transition: transform.1s;
+    align-items: center;
 }
-img:hover{
-    transform: scale(2);
 
-}
 .p1{
 
     text-align: center;
 }
 button{
-    background-color: #8354ac!important;
+    /* background-color: #8354ac!important; */
     color: #3b244b !important;
     border-color:#3b244b !important ;
+    height: 60px;
+    width: 100px;
 }
 
 .centerResult{
@@ -62,17 +107,13 @@ button{
     display: flex;
     height: 190px;
 }
-.logo{
-    width: 300px;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
 
 .resultat{
     margin-bottom: 1rem;
 }
 
 /* debut session teste pour l'affichage des scores */
+
 
 .result{
     display: flex;
@@ -87,12 +128,6 @@ button{
     text-align: center;
 }
 
-.bottom-text{
-    display: flex;
-}
-.textBottom{
-    text-align: center;
-}
 
 /* Changement des couleurs des boutons au survols */
 button:hover{
@@ -110,27 +145,34 @@ button:hover{
     height: 20px;
     width: 50%;
     justify-content: center;
+
 }
 
-h1:hover{
-    color: #f735fa !important;
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
 }
-#uwuGirl{
-        transition: transform 1s ease-in-out;
+
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
 }
-#uwuGirl:hover {
-        transform: rotate(360deg) rotateX(360deg) scale(2);
-        
+
+.swingimage{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    margin-left: 60px;
+
+}
+
+@media screen and (min-width: 501px){
+    .swingimage{
+        width: 300px;
+        height: 300px;
     }
-
-    #uwuGirl2{
-        transition: transform 1s ease-in-out;
+    
 }
-#uwuGirl2:hover {
-        transform: rotate(180deg) rotateY(180deg) scale(2);
-    }
-
-    @media screen and (min-width: 501px) {
-        body{
-            background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2534b236-6ad0-4205-a4fe-52befe5e83f1/dd3h7lq-2d21053d-c224-4700-824c-dd08526cc0c6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1MzRiMjM2LTZhZDAtNDIwNS1hNGZlLTUyYmVmZTVlODNmMVwvZGQzaDdscS0yZDIxMDUzZC1jMjI0LTQ3MDAtODI0Yy1kZDA4NTI2Y2MwYzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J4vVa0idf8ZtHDMwcAr3UCJApDAmtkqdr2K1hoRZakU);
-    }}
