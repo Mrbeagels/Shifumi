@@ -6,7 +6,7 @@ html {
 body{
     /* background-color: #3cc2e3; */
     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2534b236-6ad0-4205-a4fe-52befe5e83f1/dd3h7lq-2d21053d-c224-4700-824c-dd08526cc0c6.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzI1MzRiMjM2LTZhZDAtNDIwNS1hNGZlLTUyYmVmZTVlODNmMVwvZGQzaDdscS0yZDIxMDUzZC1jMjI0LTQ3MDAtODI0Yy1kZDA4NTI2Y2MwYzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J4vVa0idf8ZtHDMwcAr3UCJApDAmtkqdr2K1hoRZakU);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-size: cover;
     color:#3b244b ;
     font-family: 'Bebas Neue', cursive;
@@ -16,7 +16,7 @@ body{
     position: relative;
 }
 footer{
-    position: absolute; bottom: 0;
+    /* position: absolute; bottom: 0; */
     flex-wrap: wrap;
     /* display: flex; */
     text-align: center;
@@ -135,6 +135,9 @@ button:hover{
 }
 
 /* voir pour les bts icons */
+.icon{
+    margin-bottom: 30px;
+}
 
 #iconscenter{
     display: flex;
