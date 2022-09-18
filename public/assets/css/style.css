@@ -1,7 +1,5 @@
 
-html {
-    height: 100%;
-}
+
 
 body{
     /* background-color: #3cc2e3; */
@@ -9,11 +7,10 @@ body{
     background-repeat:repeat;
     background-size: cover;
     color:#3b244b ;
-    min-height: 100%;
     margin: 0;
     padding: 0;
-    position: relative;
 }
+
 footer{
     /* position: absolute; bottom: 0; */
     flex-wrap: wrap;
@@ -22,9 +19,7 @@ footer{
     width: 100%;
 }
 h1{
-    font-size: 85px;
-    font-family: 'Flamingle', sans-serif;
-
+    font-size: 35px;
 }
 #thibaud{
     width:100%;
@@ -60,28 +55,51 @@ text-align: center;
 }
 
 .buttonStone{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    text-align: center;
+    background-color: #8b6c5c;
+    width: auto;
+    height: auto;
+}
+.stoneColor{
+    color: #8b6c5c;
+    font-weight: bold;
+    font-size: 20px;
 }
 .buttonLeaf{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    text-align: center;
+    background-color: #90EE90;
+    width: auto;
+    height: auto;
+}
+.leafColor{
+    color:#90EE90 ;
+    font-weight: bold;
+    font-size: 20px;
 }
 .buttonScissor{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    text-align: center;
+    background-color:  #aaa9ad;
+    width: auto;
+    height: auto;
+}
+.scissorColor{
+    color:#aaa9ad ;
+    font-weight: bold;
+    font-size: 20px;
 }
 .swingimage{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     align-items: center;
+}
+#userScore{
+    font-size: 26px !important;
+}
+#botScore{
+    font-size: 26px;
 }
 
 .p1{
-
     text-align: center;
 }
 button{
@@ -89,7 +107,6 @@ button{
     color: #3b244b !important;
     border-color:#3b244b !important ;
     height: 60px;
-    width: 100px;
 }
 
 .centerResult{
@@ -98,11 +115,8 @@ button{
 
 }
 .resultat{
-    display: flex;
-    justify-content: center;
-    border: #f735fa 1px solid;
-    width: 60%;
-    height: 300px;
+    font-size: 25px;
+    margin-bottom: 1rem;
 }
 
 .test{
@@ -110,24 +124,11 @@ button{
     height: 190px;
 }
 
-.resultat{
-    margin-bottom: 1rem;
-}
-
 /* debut session teste pour l'affichage des scores */
-
 
 .result{
     display: flex;
     margin-bottom: 3rem;
-}
-.myScores{
-    width: 50%;
-    text-align: center;
-}
-.robotScores{
-    width: 50%;
-    text-align: center;
 }
 
 
