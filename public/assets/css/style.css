@@ -9,7 +9,6 @@ body{
     background-repeat:repeat;
     background-size: cover;
     color:#3b244b ;
-    font-family: 'Bebas Neue', cursive;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -21,6 +20,11 @@ footer{
     /* display: flex; */
     text-align: center;
     width: 100%;
+}
+h1{
+    font-size: 85px;
+    font-family: 'Flamingle', sans-serif;
+
 }
 #thibaud{
     width:100%;
@@ -52,10 +56,7 @@ footer{
 }
 
 .title{
-
-    text-align: center;
-    align-items: flex-end;
-    width: 100%;
+text-align: center;
 }
 
 .buttonStone{
@@ -101,6 +102,7 @@ button{
     justify-content: center;
     border: #f735fa 1px solid;
     width: 60%;
+    height: 300px;
 }
 
 .test{
@@ -169,10 +171,9 @@ button:hover{
     -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
     animation: swinging 3.5s ease-in-out forwards infinite;
     margin-left: 60px;
-
 }
 
-@media screen and (min-width: 501px){
+@media screen and (min-width: 571px){
     .swingimage{
         width: 300px;
         height: 300px;
